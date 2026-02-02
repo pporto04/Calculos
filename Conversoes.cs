@@ -7,36 +7,25 @@ using System.Threading.Tasks;
 namespace Calculos
 {
     /// <summary>
-    /// Implementa operações Aritméticas
+    /// Implementa operações de conversão.
     /// </summary>
-  
-    internal static class Aritmetica
+    internal static class Conversoes
     {
         /// <summary>
         /// Tipo de conversão de temperatura a executar
         /// </summary>
         public enum ConversaoTemperatura
-        { 
+        {
             Nulo = 0,
             CelsiusFahrenheit,
             FahrenneitCelsius
         }
         /// <summary>
-        /// Operação Soma.
+        /// Conversão de temperaturas.
         /// </summary>
-        /// <returns>Retorna a soma de dois números.</returns>
-        public static int Somar(int x, int y)
-        {
-            return x + y;
-        }
-        /// <summary>
-        /// Operação Subtração.
-        /// </summary>
-        /// <returns>Retorna a subtração de dois números.</returns>
-        public static int Subtrair(int x, int y)
-        {
-            return x - y;
-        }
+        /// <param name="conversao">A conversão a efetuar. </param>
+        /// <param name="temperatura">A temperatura a converter. </param>
+        /// <returns>Retorna o resultado da conversão. </returns>
         public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
@@ -49,7 +38,5 @@ namespace Calculos
             }
             return -1;
         }
-      
-
     }
 }
