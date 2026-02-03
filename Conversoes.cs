@@ -34,14 +34,14 @@ namespace Calculos
         /// </summary>
         /// <param name="conversao">A conversão a efetuar. </param>
         /// <param name="temperatura">A temperatura a converter. </param>
-        /// <returns>Retorna o resultado da conversão. </returns>
+        /// <returns>Retorna o resultado da conversão da temperatura. </returns>
         public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
             {
                 return (temperatura * 1.8000 + 32);
             }
-            else if (conversao == ConversaoTemperatura.FahrenheitCelcius)
+            else if (conversao == ConversaoTemperatura.FahrenneitCelsius)
             {
                 return ((temperatura - 32) / 1.8000);
             }
@@ -52,7 +52,7 @@ namespace Calculos
         /// </summary>
         /// <param name="conversao">A conversão a efetuar. </param>
         /// <param name="distancia">A distância a converter. </param>
-        /// <returns>Retorna o resultado da conversão. </returns>
+        /// <returns>Retorna o resultado da conversão da distância. </returns>
         public static double ConverterDistancia(ConversaoDistancia conversao, double distancia)
         {
             if (conversao == ConversaoDistancia.MetrosMilhas)
